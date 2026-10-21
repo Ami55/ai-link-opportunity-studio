@@ -28,3 +28,12 @@ CSV data is parsed in your browser. When you select Generate, the current brand 
 
 ## Validation
 Automated checks covered CSV parsing, URL validation, demo modes, mocked AI success/error handling, export context and tracker attribution. The proxy previously returned a real successful Gemini response during app development. Browser visual QA and this app's Vercel deployment have not been verified.
+
+## Unlinked brand mentions
+Open Brand mentions to load fictional demo coverage or import a mention CSV. Required columns: URL, Title, Excerpt, Link status (unlinked, linked or unknown). Optional: Contact URL. Gemini assesses up to 30 mentions and drafts outreach for relevant user-marked unlinked coverage. No web search or link crawling occurs; verify current status before outreach. Download the analysis with its source snapshot.
+
+## Broken links
+Open Broken links to load fictional demo references or import a CSV. Required: Source URL, Broken URL, Anchor, Status. Status values: reported, verified broken, working, unknown. Optional: Notes, Checked date, Contact URL. Add a replacement URL and verified contents. Gemini assesses up to 30 references and prepares a replacement plan and outreach for relevant user-verified broken links. No crawling or HTTP checks occur. Recheck status and suitability before outreach. Working links are excluded; uncertain statuses need verification. Export preserves the source snapshot.
+
+## Linkable Asset Planner
+Open Asset planner to load fictional expertise and source notes or describe your own material. Gemini compares asset concepts and prepares a production brief with evidence requirements and review gates. Download the plan with its original input notes, or send it to the content studio as draft context. Research, implementation, verification and publication remain human work. No backlink outcomes or time savings are promised.
