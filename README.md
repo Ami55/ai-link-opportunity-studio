@@ -1,0 +1,30 @@
+# AI Link Opportunity Studio
+
+Built by SEO Girl - Ami. A standalone AI-assisted workspace for backlink prospect research, guest-post pitches, digital PR plans and blog drafts.
+
+## Run locally
+Open index.html in a browser. Internet access is needed for Gemini generation. Select **Load demo workspace** to explore fictional sample data and prepared drafts.
+
+## Deploy to Vercel
+1. Upload index.html, vercel.json and this README to the root of your GitHub repository.
+2. Import the repository into Vercel.
+3. Select the Other framework preset. Leave the build command unset and use the repository root as the output directory.
+4. Deploy and test Generate with Gemini on the live URL.
+
+No dependency installation or build is required.
+
+## AI connection
+The app calls https://gemini-proxy-boldstudio.vercel.app/api/gemini using the gemini-3.8-flash model. The GEMINI_API_KEY belongs in the existing proxy project's server-side Vercel environment variables, not this app or the GitHub repository. This app needs no API key environment variable while using that proxy. Generation depends on proxy availability, access settings, CORS and Gemini quota. This package does not change proxy authentication or rate limits.
+
+## Features
+- Local CSV prospect import and transparent topic overlap
+- Backlink outreach, guest-post pitching and digital PR planning
+- Editable blog drafts and source/proposed-link lists
+- Copy-and-links downloads and a local outreach tracker
+- Fictional demo prospects and prepared examples
+
+## Data and limitations
+CSV data is parsed in your browser. When you select Generate, the current brand brief, selected prospect and supplied sources are sent through the Gemini proxy. No URLs are crawled and no emails are sent. Demo links on example.com are placeholders, not real placements. AI output needs human fact-checking and editorial review. Local saves use browser storage; export backups. There are no measured time-saving or link-acquisition claims.
+
+## Validation
+Automated checks covered CSV parsing, URL validation, demo modes, mocked AI success/error handling, export context and tracker attribution. The proxy previously returned a real successful Gemini response during app development. Browser visual QA and this app's Vercel deployment have not been verified.
