@@ -37,3 +37,6 @@ Open Broken links to load fictional demo references or import a CSV. Required: S
 
 ## Linkable Asset Planner
 Open Asset planner to load fictional expertise and source notes or describe your own material. Gemini compares asset concepts and prepares a production brief with evidence requirements and review gates. Download the plan with its original input notes, or send it to the content studio as draft context. Research, implementation, verification and publication remain human work. No backlink outcomes or time savings are promised.
+
+## Campaign Results Reviewer
+Load fictional demo campaign results, import a CSV or summarize the local outreach tracker. CSV columns: Campaign, Prospect URL, Approach, Sent, Replied, Placement, Verified (yes/no flags); optional Angle, Notes. One prospect per campaign; duplicate prospects and inconsistent flags are rejected. Rates use sent-prospect denominators. Tracker summaries lack complete sent/reply data, so those metrics remain unknown. Gemini reviews grouped metrics and up to 30 notes to suggest evidence-led improvements and next experiments. It does not establish causality, statistical significance, ranking changes or revenue. Download reviews with the metric/context snapshot.
